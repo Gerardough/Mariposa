@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariposa Farm Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+
+    <!--Header-->
+    <header id="home">
+
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navi">
+            <div class="container">
+            <a class="navbar-brand" href="#home">Mariposa Farm Resort</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products and Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="personnel.html">Personnel</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="visual.html">Commercial</a></li>
+                        <li><a class="dropdown-item" href="governance.html">Governance</a></li>
+                        <li><a class="dropdown-item" href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn0" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+        <!--End of Navigation-->
+
+        <!--Banner-->
+        <section class="banner">
+            <div class="container py-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-7 col-sm-7 text-center mt-5">
+                        <h1 class="pt-3 mt-5 mb-3">Where Serenity Blossoms Amidst Nature's Embrace</h1>
+                        <button class="btn1 mb-3" onclick="scrollToTarget()">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of Banner-->
+
+    </header>
+    <!--End of Header-->
+
+
+    <!--Description Section-->
+    <section class="description" id="descrip">
+        <div class="container py-5">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-lg-7 text-center">
+                    <div class="row">
+                        <h2 class="pt-6 mt-5 mb-3">Description</h2>
+                        <p class="para">The Mariposa Farm Resort is a tranquil farm, family oriented and peaceful hotel like property that boasts 6 spacious rooms for guests to get away from the hustle and bustle of the city and embrace nature  and all of its offerings. Nestled in a secluded neighborhood in San Carlos, Pangasinan, the property features  a natural spring lake for fishing, paddle boarding , and/or kayaking. A dip pool and a pontoon boat are available for relaxing while on the property.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row ima">
+                        <div class="col-lg-4">
+                            <img class="w-100"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Kayaking" src="imahes/descriptive.png" alt="">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img class="w-100"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Fishing Area" src="imahes/descriptive2.png" src="imahes/descriptive2.png" alt="">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img class="w-100"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Sunset View" src="imahes/descriptive3.png" src="imahes/descriptive3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Description Section-->
+
+
+    <!--Main-->
+    <main>
+        <!--Carousel Section-->
+        <section class="section2 my-5">
+            <div class="container">
+        
+                <div class="row">
+                    <div class="col-lg-12 col-xxl-7">
+                        <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imahes/carousel1.png" class="d-block w-100" alt="Carousel Item 1: Lake View">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imahes/carousel2.png" class="d-block w-100" alt="Carousel Item 2: Foyer View">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imahes/carousel3.png" class="d-block w-100" alt="Carousel Item 3: Lake View 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xxl-5">
+                        <div class="overview1">
+                            <h2>Overview</h2>
+                            <p class="para my-4">Mariposa Farm Resort is the latest property under the management of Villamor Properties. Based in Southern California, Villamor Properties has long term and short term rental properties in Southern California, USA, Metro Manila and it’s premier resort property, Mariposa Farm Resort located in San Carlos, Pangasinan, Philippines.</p>
+                            <p class="para">Mariposa Farm Resort was developed to be a short term rental property that provides Guests with an environment that is conducive to leisure, relaxation,  engaging with nature and enjoying various water sports on the natural spring lake located in the center of the property.  It boasts a six bedroom, Apartment style building which overlooks the lake.  In addition, there are 4 Bahay Kubo Huts for guest who like to enjoy the natural outdoor surroundings up close.
+                                The property has Acacia trees, native Bamboo and numerous native fruit trees which includes Mango, Guyobano, Avocado, Calamansi, Cacao and Banana, to name a few.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xxl-12 col-lg-12">
+                        <div class="overview1">
+                            <p class="para my-4">
+                                Following the guidelines  of a true farm, there will be various livestock that will be a part of the resort experience for young and old.  Plans are underway for Goats, Chickens, Geese, and Native Pigs to be housed on the property in order of provide a true farm experience when visiting the property.
+                            </p>
+
+                            <p class="para">
+                                In addition, an organic Garden is under development with the ultimate goal of providing fresh herbs and vegetables from “Farm to Table” while Guest are visiting the property.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--End of Carousel Section-->
+
+        <section class="section3">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-5 col-lg-5 col-sm-12 personal1">
+                        <a class="perso-page" href="product.html">
+                            <div class="personnel">
+                                    <h3>Explore Our Products And Serivces</h3>
+                                    <img src="imahes/pontoon.png" alt="" class="person1">
+                                    <p class="para perso-para">Mariposa Farm Resort is the jewel of the Villamor Properties inventory. It has a natural Spring Lake that allows for Paddle Boarding, Kayaking, and Fishing.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xxl-2 col-lg-2 col-sm-12">
+                        
+                    </div>
+
+                    <div class="col-xxl-5 col-lg-5 col-sm-12 personal1">
+                        <a class="perso-page" href="personnel.html">
+                            <div class="personnel">
+                                    <h3>Meet The Founders And Personnel</h3>
+                                    <img src="imahes/person1.png" alt="" class="person1">
+                                    <p class="para perso-para">Villamor Properties is a family owned small business which is the brainchild of Sherrie Villamor who grew up in the Metro Manila area.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--End of Main-->
+
+
+    <!--Footer-->
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-lg-7 col-sm-12">
+                    <h4 class="footer-h">Mariposa Farm Resort</h4>
+                    <p class="para footering">Mariposa Farm Resort is the latest property under the management of Villamor Properties. Based in Southern California, Villamor Properties has long term and short term rental properties in Southern California, USA, Metro Manila and it’s premier resort property, Mariposa Farm Resort located in San Carlos, Pangasinan, Philippines.  </p>
+                </div>
+
+                <div class="col-xxl-6 col-lg-5 col-sm-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Socials
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"><a class="mariposa-social" href="https://www.facebook.com/profile.php?id=61556773895652">Facebook: Mariposa Farm Resort</a></div>
+                            </div>
+                        </div>
+                            
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Developers
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="para">
+                                        castillo.dylangerard@ue.edu.ph <br>
+                                        gavino.cyrusjohn@ue.edu.ph <br>
+                                        rangkhawong.nicolasgabriel@ue.edu.ph
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Contact Us
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <h4>E-mail: villamorproperties@yahoo.com</h4>
+                                <p>Point of Contact:Alexander Gasper</p><br>
+
+                                <h4>E-mail:muningqv@gmail.com</h4>
+                                <p>Point of Contact:Monique Villamor </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    <p>© 2024 Mariposa Farm Resort. | All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--End of Footer-->
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function scrollToTarget() {
+            var targetElement = document.getElementById('descrip');
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>

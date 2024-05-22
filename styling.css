@@ -1,0 +1,514 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Gabriela&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather&family=PT+Serif+Caption:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Share+Tech+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Gabriela&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather&family=PT+Serif+Caption:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Share+Tech+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e8e8e8;
+    font-family: "Roboto Serif", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Header*/
+.navbar {
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    background-color: #f1f1f1;
+    opacity: 0.85;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(28, 28, 71);
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(28, 28, 71);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.navbar-link:hover{
+    scale: 1.1;
+}
+
+.search{
+    height: 40px;
+    width: 100%;
+    border-radius: 60px;
+    outline: none;
+    border: 3px solid rgb(28, 28, 71);
+    margin-right: -30px;
+}
+
+.btn0{
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border: none;
+    background: rgb(28, 28, 71);
+    color: #F1F1F1;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+.banner{
+    background: url(imahes/carousel2.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.banner::after{
+    content: '';
+    inset: 0;
+    background: rgb(18, 14, 15);
+    z-index: -1;
+    position: absolute;
+    opacity: 0.75;
+}
+
+.banner h1{
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+    color: #dba858;
+    text-shadow: 4px 4px black;
+}
+
+
+.banner-about{
+    background: url(imahes/lakeview.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.banner-about::after{
+    content: '';
+    inset: 0;
+    background: rgb(18, 14, 15);
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.banner-about h1{
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+    color: #dba858;
+    text-shadow: 4px 4px black;
+}
+
+
+.banner-owner{
+    background: url(imahes/pontoon.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.banner-owner::after{
+    content: '';
+    inset: 0;
+    background: rgb(18, 14, 15);
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.banner-owner h1{
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+    color: #dba858;
+    text-shadow: 4px 4px black;
+}
+
+
+.banner-governance{
+    background: url(imahes/bahay-kubo.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.banner-governance::after{
+    content: '';
+    inset: 0;
+    background: rgb(18, 14, 15);
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.banner-governance h1{
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+    color: #dba858;
+    text-shadow: 4px 4px black;
+}
+
+
+
+.banner-visual{
+    background: url(imahes/kayaking.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.banner-visual::after{
+    content: '';
+    inset: 0;
+    background: rgb(18, 14, 15);
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.banner-visual h1{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+    color: #dba858;
+    text-shadow: 4px 4px black;
+}
+/*Adjusts the font size as the screen gets smaller*/
+
+@media (max-width: 576px){
+    .personal1{
+        margin-bottom: 24px;
+    }
+
+    .spacing-top{
+        margin-top: 24px;
+    }
+
+    .guests{
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .guests .centering{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 3rem; 
+    }
+
+    .ima{
+        margin-left: 50px;
+        width: 75%;
+    }
+
+    .ima img{
+        margin-bottom: 24px;
+    }
+
+    .personal1{
+        margin-bottom: 24px;
+    }
+
+    .backg{
+        margin-bottom: 24px;
+    }
+
+    .guests{
+        margin-top: 24px;
+    }
+}
+
+@media(max-width: 1060px){
+    .guests{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 1079px){
+    .personal1{
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    .backg{
+        margin-bottom: 24px;
+    }
+
+    .guests{
+        margin-top: 24px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+
+    .banner h1 {
+        font-size: 3rem; 
+    }
+    .ima{
+        margin-left: 50px;
+        width: 75%;
+    }
+
+    .ima img{
+        margin-bottom: 24px;
+    }
+
+    .guests{
+        margin-top: 24px;
+    }
+}
+
+.member-desc span{
+    animation: slowly-reveal linear forwards;
+    animation-timeline: view();
+    color: hsl(0 0% 100% / 0);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgb(28, 28, 71), rgb(28, 28, 71));
+}
+
+.member-desc span{
+    animation-range-start: cover 25.5vh;
+    animation-range-end: cover 53vh;
+}
+
+@keyframes slowly-reveal{
+
+    to{
+        background-size: 100% 100%;
+    }
+}
+
+
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline-color: none;
+    background-color: rgb(28, 28, 71);
+    color: #dba858;
+    font-weight: 700;
+    border-radius: 60px;
+    box-shadow: 4px 4px black;
+}
+
+.btn1:hover{
+    color: rgb(28, 28, 71);
+    background-color: #dba858;
+}
+
+.btn1:hover a{
+    color: rgb(28, 28, 71);
+    background-color: #dba858;
+}
+
+/*End of Header*/
+
+/*Description Section*/
+
+.description{
+    color: rgb(28, 28, 71);
+    background-color: #dba858;
+}
+
+.descriptioned{
+    color: rgb(28, 28, 71);
+    background-color: #dba858;
+}
+
+.description-again{
+    color: rgb(28, 28, 71);
+    background-color: #f1f1f1;
+}
+
+.backgroundy{
+    color: rgb(28, 28, 71);
+    background-color: #f1f1f1;
+}
+
+.para{
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*End of Description Section*/
+
+/*Section 2*/
+
+.section2{
+    padding: 24px;
+}
+
+.overview1{
+    color: rgb(28, 28, 71);
+}
+
+/*End of Section 2*/
+
+
+/*Section 3*/
+
+.section3{
+    padding: 90px;
+    background-color: #948d80;
+}
+
+.found{
+    color: rgb(28, 28, 71);
+}
+
+.nounder{
+    text-decoration: none;
+    color: #dba858;
+}
+
+
+
+.personnel{
+    border-radius: 12px;
+    padding: 12px;
+    transition: background-color 0.5s ease;
+    transition-delay: 0.05s;
+}
+.personnel:hover{
+    background-color: #b1aba0;
+    cursor: pointer;
+    transition-delay: 0s;
+    scale: 1.05;
+}
+
+.person1{
+    border-radius: 50%;
+    margin-left: 27%;
+    width: 45%;
+}
+
+.perso-para{
+    margin-top: 12px;
+}
+
+.perso-page{
+    text-decoration: none;
+    color: rgb(28, 28, 71);
+}
+
+/*End of Section 3*/
+
+
+/*Footer*/
+footer{
+    color: #F1F1F1;
+    background-color: rgb(28, 28, 71);
+}
+
+footer h4{
+    font-size: 1rem;
+}
+
+.footer-h{
+    font-family: "Cormorant Garamond", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.footering{
+    max-width: 420px;
+}
+
+.accordion{
+    border: none;
+}
+
+.accordion-button{
+    color: #F1F1F1;
+    background-color: rgb(28, 28, 71);
+}
+
+.accordion-body{
+    color: #F1F1F1;
+    background-color: rgb(28, 28, 71);
+}
+
+.accordion-button::after {
+    color: #f1f1f1
+}
+
+.mariposa-social{
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+/*End of Footer*/
+
+.active{
+    text-decoration: underline;
+    color: rgb(28, 28, 71);
+}
+
+
+.checkin{
+    width: 80px;
+}
+
+
+.checkout{
+    width: 80px;
+}
+
+.mar-top{
+    margin-top: 24px;
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.gallery-item {
+    padding: 5px;
+}
